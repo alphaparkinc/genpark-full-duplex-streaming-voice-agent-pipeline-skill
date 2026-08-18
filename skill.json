@@ -1,0 +1,35 @@
+{
+  "name": "genpark-full-duplex-streaming-voice-agent-pipeline-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Full-duplex streaming speech-to-speech agent pipeline & interruptible voice controller.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "full-duplex-voice",
+    "speech-to-speech",
+    "voice-pipeline",
+    "streaming-audio",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "audio_input_buffer_ms": {
+      "type": "integer"
+    },
+    "interruption_sensitivity": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "duplex_latency_ms": {
+      "type": "integer"
+    },
+    "interruption_handled": {
+      "type": "boolean"
+    },
+    "stream_health": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
